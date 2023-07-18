@@ -13,5 +13,8 @@ export class DarkModeToggleComponent {
 
   toggleDarkMode(): void {
     this.isDarkMode = !this.isDarkMode;
+
+    const body = document.body;
+    body.classList.toggle('dark-mode');
   }
 }

@@ -9,6 +9,14 @@ body {
     background-color: #ffff;
     color: #333;
   }
+
+  .toggle-btn{
+    /* padding: 5px 10px; */
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    z-index: 9999;
+  }
   
   /* Dark mode styles */
   body.dark-mode {
