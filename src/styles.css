@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* imports */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+
+/* Light mode styles */
+body {
+    background-color: #ffff;
+    color: #333;
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: #333;
+    color: #f7f30c;
+  }
+  
+  /* Dark mode icon styles */
+  .dark-mode button i {
+    color: #f7f30c;
+  }
+  
+  
