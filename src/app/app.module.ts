@@ -8,6 +8,12 @@ import { DarkModeToggleComponent } from './dark-mode-toggle/dark-mode-toggle.com
 import { SearchComponent } from './search/search.component';
 import { ModalComponent } from './modal/modal.component';
 import { SignupComponent } from './signup/signup.component';
+import { AboutComponent } from './about/about.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: 'about', component: AboutComponent },
+];
 
 @NgModule({
   declarations: [
@@ -16,12 +22,14 @@ import { SignupComponent } from './signup/signup.component';
     DarkModeToggleComponent,
     SearchComponent,
     ModalComponent,
-    SignupComponent
+    SignupComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     FormsModule, // Add FormsModule to imports
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
